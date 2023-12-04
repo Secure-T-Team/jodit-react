@@ -1,6 +1,6 @@
 {
 	"name": "@nonamegeorge/jodit-react",
-	"version": "1.0.7",
+	"version": "1.0.8",
 	"description": "Jodit is awesome and usefully wysiwyg editor with filebrowser",
 	"main": "build/jodit-react.js",
 	"author": "Chupurnov <chupurnov@gmail.com> (https://xdsoft.net/)s",
@@ -34,6 +34,7 @@
 		"babel-cli": "^6.26.0",
 		"babel-loader": "^9.1.2",
 		"babel-plugin-transform-class-properties": "^6.24.1",
+		"cross-env": "^7.0.3",
 		"css-loader": "^6.8.1",
 		"eslint": "8.43.0",
 		"eslint-config-prettier": "^8.8.0",
@@ -53,7 +54,7 @@
 	"scripts": {
 		"newversion": "npm run lint && npm update && rm -rf build/ && npm run build && npm version prerelease --preid=beta --no-git-tag-version && npm run github",
 		"lint": "eslint ./",
-		"demo": "cd examples && export NODE_ENV=development && webpack serve --config ./webpack.config.js --mode development",
+		"demo": "cd examples && cross-env NODE_ENV=development && webpack serve --config ./webpack.config.js --mode development",
 		"start": "npm run demo",
 		"build": "export NODE_ENV=production && webpack --mode production",
 		"github": "npm run git && git push --tags origin HEAD:master",
