@@ -1,6 +1,6 @@
 {
 	"name": "@nonamegeorge/jodit-react",
-	"version": "1.0.6",
+	"version": "1.0.7",
 	"description": "Jodit is awesome and usefully wysiwyg editor with filebrowser",
 	"main": "build/jodit-react.js",
 	"author": "Chupurnov <chupurnov@gmail.com> (https://xdsoft.net/)s",
@@ -16,7 +16,7 @@
 		"rte"
 	],
 	"dependencies": {
-		"@nonamegeorge/jodit": "^1.0.5"
+		"@nonamegeorge/jodit": "^1.0.6"
 	},
 	"peerDependencies": {
 		"react": "~0.14 || ^15.0.0 || ^16.0.0 || ^17.0.0 || ^18.0.0",
