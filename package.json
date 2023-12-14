@@ -16,7 +16,7 @@
 		"rte"
 	],
 	"dependencies": {
-		"@nonamegeorge/jodit": "^1.0.9"
+		"@nonamegeorge/jodit": "^1.0.10"
 	},
 	"peerDependencies": {
 		"react": "~0.14 || ^15.0.0 || ^16.0.0 || ^17.0.0 || ^18.0.0",
